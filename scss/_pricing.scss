@@ -1,0 +1,75 @@
+.pricing {
+  overflow: hidden;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    .card {
+      padding: 20px 16px 30px;
+      box-shadow: 9px 11px 41px $lightGray;
+      flex: 1;
+      color: $dPurple;
+      .yellow {
+        color: $yellow;
+        font-size: 30px;
+      }
+      .red {
+        color: $red;
+        font-size: 30px;
+      }
+      .green {
+        font-size: 30px;
+        color: $green;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          display: block;
+          font-size: 17px;
+        }
+      }
+      h4 {
+        font-weight: 100;
+        margin-top: 15px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-weight: 600;
+        margin-bottom: 27px;
+        font-size: 13px;
+      }
+      ul {
+        margin-bottom: 22px;
+        li {
+          margin-bottom: 10px;
+          display: block;
+          padding-left: 40px;
+          i {
+            color: $green;
+            margin-right: 10px;
+          }
+        }
+      }
+      .buy {
+        background-color: #7620FF;
+        border-radius: 17px;
+        color: #FFF;
+        font-size: 15px;
+        margin: 0 auto;
+        width: 85px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        border: 1px solid #7620FF;
+        transition: .3s;
+        text-align: center;
+        &:hover {
+          color: $dPurple;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

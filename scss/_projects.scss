@@ -1,0 +1,42 @@
+.project {
+  overflow: hidden;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    .card {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .info {
+        padding: 13px 0 25px;
+        h4 {
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .learn-more {
+    margin-top: 20px;
+    text-align: center;
+    a {
+      padding: 8px 27px;
+      background-color: $purple;
+      border-radius: 36px;
+      color: $white;
+      display: inline-block;
+      border: 1px solid $purple;
+      transition: .3s;
+      &:hover {
+        color: $dPurple;
+        background-color: transparent;
+      }
+    }
+  }
+}

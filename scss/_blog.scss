@@ -1,0 +1,87 @@
+.blog {
+  overflow: hidden;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    .card {
+      box-shadow: 9px 11px 41px $lightGray;
+      padding: 18px 17px 25px;
+      border-radius: 7px;
+      color: $dPurple;
+      h3 {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+      p {
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 13px;
+      }
+      span {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      a {
+        display: inline-block;
+        padding: 4px 15px;
+        font-size: 13px;
+        background-color: $lightBlue;
+        border-radius: 36px;
+        color: $dPurple;
+        font-weight: 600;
+        border: 2px solid $lightBlue;
+        transition: .3s;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// resume Section 
+
+.resume {
+  overflow: hidden;
+  background-color: $lightGray;
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    .box {
+      flex: 1;
+      width: 380px;
+      padding: 17px 28px 18px;
+      color: $white;
+      background-color: $dPurple;
+      border-top-right-radius: 27px;
+      border-bottom-left-radius: 27px;
+      p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      span {
+        color: $yellow;
+        display: block; 
+        font-size: 13px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .resume {
+    .row {
+      .box {
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

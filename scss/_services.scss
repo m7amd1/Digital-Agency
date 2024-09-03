@@ -1,0 +1,37 @@
+.services {
+  overflow: hidden;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 52px;
+    .col {
+      i {
+        color: $yellow;
+        font-size: 35px;
+      }
+      h3 {
+        margin: 20px 0;
+        font-weight: 100;
+        color: $dPurple;
+      }
+      p {
+        color: $dPurple;
+      }
+    }
+    .two {
+      i {
+        color: $red;
+      }
+    }
+    .three {
+      i {
+        color: $green;
+      }
+    }
+    .four {
+      i {
+        color: $purple;
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.navbar {
+  padding: 50px 0;
+  .row {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    a {
+      color: $dPurple;
+    }
+    .logo {
+      position: relative;
+      padding-left: 40px;
+      a {
+        text-transform: uppercase;
+        font-size: 21px;
+      }
+    }
+    .humbrger {
+      display: none;
+    }
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        font-weight: 600;      
+        padding-left: 24px;
+        font-size: 14px;      
+      }
+      .login {        
+        margin: 0 0 0 21px;
+        border-left: 1px solid #000;
+        a:first-child {
+          padding: 8px 27px;
+          border-radius: 36px;
+          color: $dPurple;
+          margin-left: 20px;
+          display: inline-block;
+          transition: .3s;
+          &:hover {
+            color: $white;
+            background-color: $yellow;
+          }
+        }
+        a:last-child {
+          padding: 8px 27px;
+          background-color: $purple;
+          border-radius: 36px;
+          color: $white;
+          margin-left: 20px;
+          display: inline-block;
+          border: 1px solid $purple;
+          transition: .3s;
+          &:hover {
+            color: $dPurple;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: relative;
+    .humbrger {
+      display: block !important;
+      color: $dPurple;
+      cursor: pointer;
+      font-size: 23px;
+    }
+    nav {
+      align-items: flex-start !important;
+      flex-direction: column;
+      z-index: 99;
+      position: absolute;
+      bottom: -242px;
+      right: 22px;
+      width: 341px;
+      background-color: #0B093B;
+      padding: 12px 5px;
+      border-top-right-radius: 15px;
+      > a {
+        margin-bottom: 10px;
+        color: $white !important;
+        display: block;
+      }
+      .login {
+        margin: 0 auto 0 36px !important;
+        display: block !important;
+        border-left: 0 !important;
+        a:first-child {
+          color: #fff !important;
+          margin-left: 0 !important;
+        }
+        a:last-child {
+          &:hover {
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// Hero Section 
+
+.hero {
+  overflow: hidden;
+  padding-top: 4%;
+  margin-bottom: 50px;
+  .row {
+    display:  flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    .text {
+      flex: 2;
+      color: $dPurple;
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 19px 0 23px;
+      }
+      .get-started {
+        padding: 12px 42px;
+        background-color: $purple;
+        border-radius: 36px;
+        color: #FFF;
+        border: 1px solid $purple;
+        display: inline-block;
+        transition: .3s;
+        &:hover {
+          font-weight: 600; 
+          color: $dPurple;
+          background-color: transparent;
+        }
+      }
+    }
+    .img {
+      flex: 1;
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+      .box {
+        position: absolute;
+        bottom: 38px;
+        left: -135px;
+        width: 380px;
+        padding: 17px 28px 18px;
+        color: $white;
+        background-color: $dPurple;
+        border-top-right-radius: 27px;
+        border-bottom-left-radius: 27px;
+        p {
+          margin-bottom: 20px;
+          font-size: 1rem;
+          line-height: 1.7;
+        }
+        span {
+          color: $yellow;
+          display: block; 
+          font-size: 13px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 14%;
+    .row {
+      text-align: center;
+      flex-flow: column wrap;
+      .text {
+        h1 {
+          font-size: 25px;
+        }
+        p {
+          width: 100%;
+          margin: 20px auto !important;
+        }
+      }
+      .img {
+        .box {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Brand Section
+
+.brand {
+  overflow: hidden;
+  background-color: $lightGray;
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .brand {
+    .row {
+      flex-flow: column wrap;
+    }
+  }
+}

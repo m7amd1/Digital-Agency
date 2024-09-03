@@ -1,0 +1,96 @@
+
+  // Colors
+
+$green: #4CD5C5;
+$red: #F40051;
+$gray: #6B6A7E;
+$white: #FFF;
+$lightGray: #F5F5F5;
+$dPurple: #0B093B;
+$yellow: #F2B300;
+$lightBlue: #C4FFFF;
+$purple: #7620FF;
+
+
+  // Breakpoints 
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+  // Helping Clasess
+
+.pd {
+  padding: 100px 0;
+}
+
+.heading {
+  color: $dPurple;
+  padding-bottom: 70px;
+  h1 {
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  p {
+    line-height: 1.6;
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    h1 {
+      font-size: 21px;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.active {
+  color: $dPurple;
+}
+
+span.yellow {
+  position: absolute;
+  left: 13px;
+  top: -7px;
+  width: 20px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: $yellow;
+}
+span.green {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 20px;
+  background-color: $green; 
+}
+span.blue {
+  position: absolute;
+  left: 12px;
+  top: 17px;
+  width: 20px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: $dPurple;
+}
+span.red {
+  position: absolute;
+  left: -2px;
+  top: 32px;
+  width: 20px;
+  height: 10px;
+  border-radius: 27px;
+  background-color: $red;
+}
